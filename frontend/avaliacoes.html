@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avaliações - Avaliação de Energéticos</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Avaliação de Energéticos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="avaliacoes.html">Avaliações</a></li>
-            </ul>
-        </nav>
+      <h1>Avaliação de Energéticos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="avaliacoes.html">Avaliações</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="avaliacoes">
-            <h2>Todas as Avaliações</h2>
-            <div class="avaliacoes-lista">
-                
-            </div>
-        </section>
-    
-        <section id="nova-avaliacao">
-            <h2>Deixe sua Avaliação</h2>
-            <form id="form-avaliacao">
-                <label for="nome">Nome do energético:</label>
-                <input type="text" id="nome" name="nome" required>
-        
-                <label for="nota">Nota:</label>
-                <select id="nota" name="nota" required>
-                    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
-                    <option value="⭐⭐⭐⭐☆">⭐⭐⭐⭐☆</option>
-                    <option value="⭐⭐⭐☆☆">⭐⭐⭐☆☆</option>
-                    <option value="⭐⭐☆☆☆">⭐⭐☆☆☆</option>
-                    <option value="⭐☆☆☆☆">⭐☆☆☆☆</option>
-                </select>
-        
-                <label for="comentario">Comentário:</label>
-                <textarea id="comentario" name="comentario" required></textarea>
-        
-                <label for="imagem">Imagem do energético:</label>
-                <input type="file" id="imagem" name="imagem" accept="image/*">
-        
-                <button type="submit">Enviar Avaliação</button>
-            </form>
-        </section>
+      <section id="avaliacoes">
+        <h2>Todas as Avaliações</h2>
+        <div class="avaliacoes-lista"></div>
+      </section>
 
-        <section id="preview">
-            <h2>Pré-visualização</h2>
-            <div id="avaliacao-preview"></div>
-            <button id="salvar-pdf" style="display: none;">Salvar como PDF</button>
-        </section>
+      <section id="nova-avaliacao">
+        <h2>Deixe sua Avaliação</h2>
+        <form id="form-avaliacao">
+          <label for="Energéticos">Marca:</label>
+          <select id="Energéticos" name="Energéticos" required>
+            <option value="TNT">TNT</option>
+            <option value="Monster">MONSTER</option>
+            <option value="RedBull">REDBULL</option>
+          </select>
+
+          <label for="nome">Nome do energético:</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="nota">Nota:</label>
+          <select id="nota" name="nota" required>
+            <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            <option value="⭐⭐⭐⭐☆">⭐⭐⭐⭐☆</option>
+            <option value="⭐⭐⭐☆☆">⭐⭐⭐☆☆</option>
+            <option value="⭐⭐☆☆☆">⭐⭐☆☆☆</option>
+            <option value="⭐☆☆☆☆">⭐☆☆☆☆</option>
+          </select>
+
+          <label for="comentario">Comentário:</label>
+          <textarea id="comentario" name="comentario" required></textarea>
+
+          <label for="imagem">Imagem do energético:</label>
+          <input type="file" id="imagem" name="imagem" accept="image/*" />
+
+          <button type="submit">Enviar Avaliação</button>
+        </form>
+      </section>
+
+      <section id="preview">
+        <h2>Pré-visualização</h2>
+        <div id="avaliacao-preview"></div>
+        <button id="salvar-pdf" style="display: none">Salvar como PDF</button>
+      </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="scripts/main.js"></script>
-
-</body>
+  </body>
 </html>
