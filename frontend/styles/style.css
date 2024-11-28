@@ -1,0 +1,126 @@
+/* Reset básico */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222222;
+    color: #333;
+    padding: 0 10px;
+}
+
+header {
+    background: #3c2fb4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #4c3dd1;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+#avaliacoes .avaliacao {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#nova-avaliacao form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.avaliacao img {
+    display: block;
+    margin-top: 10px;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+#avaliacao-preview {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+#avaliacao-preview img {
+    max-width: 150px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
